@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Menna ❤️ | From Mazen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading -->
+  <div id="loader">
+    <h1>For Menna ❤️</h1>
+  </div>
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>إلى أجمل بنت اسمها منة ❤️</h1>
+      <p>هدية صغيرة من مازن</p>
+      <button onclick="startJourney()">ابدئي الرحلة 🌙</button>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery hidden">
+    <h2>أجمل صورك ✨</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/1.jpg">
+        <p>ابتسامتك كفاية تحسن يوم كامل ❤️</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/2.jpg">
+        <p>وسط كل الجمال... كنتِ الأجمل</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/3.jpg">
+        <p>فيكي راحة غريبة بحبها جدًا</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter -->
+  <section class="counter hidden">
+    <h2>بقالنا مع بعض ❤️</h2>
+    <div id="timer"></div>
+  </section>
+
+  <!-- Letters -->
+  <section class="letters hidden">
+    <h2>رسائل ليكي 💌</h2>
+    <div class="letter-box" onclick="openLetter(this)">
+      من يوم عرفتك وأنا بقيت مستني كلامك كل يوم ❤️
+    </div>
+    <div class="letter-box" onclick="openLetter(this)">
+      وجودك فرق معايا أكتر مما تتخيلي
+    </div>
+    <div class="letter-box" onclick="openLetter(this)">
+      أنتِ من أجمل الحاجات اللي حصلتلي
+    </div>
+  </section>
+
+  <!-- Final -->
+  <section class="final hidden">
+    <button onclick="showFinal()">افتحي الرسالة الأخيرة 🎁</button>
+    <div id="finalMessage" class="hidden">
+      <h2>إلى منة ❤️</h2>
+      <p>
+        مش عارف أبدأ منين، بس كل اللي أعرفه إن وجودك في حياتي فرق معايا جدًا...
+        من يوم ما عرفتك وفي حاجة جوايا اتغيرت.
+        بقيت بستنى كلامك وضحكتك.
+        سنة و6 شهور و17 يوم خلوني أتأكد إنك شخص مش عادي بالنسبة لي.
+        بحبك يا منة ❤️
+        <br><br>
+        — مازن
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
